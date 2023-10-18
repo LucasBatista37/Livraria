@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <title>Google Books API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo"> <i class="fas fa-book"> Livro</i></a>
+
+        <form action="" class="pesquisa-formulario">
+            <input type="pesquisar-input" name="" placeholder="Digite alguma coisa..." id="campo-pesquisa">
+            <label for="campo-pesquisa" class="fas fa-search"></label>
+        </form>
+
+        <div class="icones">
+            <div id="pesquisa-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#reecursos">recursos</a>
+                <a href="#chegadas">chegadas</a>
+                <a href="#avaliacoes">avaliações</a>
+                <a href="#contato">contato</a>
+            </nav>
+        </div>
+</header>
+
+<nav class="botao-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#reecursos" class="fas fa-list"></a>
+    <a href="#chegadas" class="fas fa-tags"></a>
+    <a href="#avaliacoes" class="fas fa-comments"></a>
+    <a href="#contato" class="fas fa-blogs"></a>
+</nav>
+
+<script src="components/script.js"></script>
+
+<div class="login-form-container">
+
+    <div id="fechar-login-btn" class="fas fa-times"></div>
+    
+    <form action="">
+        <h3>Login</h3>
+        <span>Nome</span>
+        <input type="email" name="" class="box" placeholder="entre com seu email" id="">
+        <span>Senha</span>
+        <input type="password" name="" class="box" placeholder="Entre com seu email" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="Relembre-me">
+            <label for="Relembre-me"> Relembre-me</label>
+        </div>
+        <input type="submit" value="login" class="btn">
+        <p>Esqueceu a Senha ? <a href="#">Click aqui</a></p>
+        <p>Não tem uma conta ? <a href="#">Crie uma</a></p>
+    </form>
+</div>
+
+<div id="results"></div>
+<script src="components/pesquisa.js"></script>
+
+</body>
+</html>
